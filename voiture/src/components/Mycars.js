@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import Car from "./Cars";
+import {Car} from "./Cars";
 
-class Mycars extends Component {
+export class Mycars extends Component {
 
         // Props & State
         state = {
@@ -20,5 +20,3 @@ class Mycars extends Component {
         ) 
     }
 }
-
-export default Mycars;

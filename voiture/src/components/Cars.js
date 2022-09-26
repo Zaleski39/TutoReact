@@ -1,6 +1,6 @@
 import React from "react";
 
-const Car = ({color, car}) => {
+export const Car = ({color, car}) => {
 
         return(
             <div style={ {backgroundColor: 'pink', width: "400px", padding: "10px", margin: "5px auto"} }>
@@ -10,4 +10,3 @@ const Car = ({color, car}) => {
         )
 }
 
-export default Car;
