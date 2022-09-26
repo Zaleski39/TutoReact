@@ -4,19 +4,22 @@ import './App.css';
 
 class App extends Component {
 
-  state = {
-    titre: 'Mon catalogue Voitures'
-  }
+    // Props & State
+    state = {
+      titre: 'Mon catalogue Voitures',
+      color: 'green'
+    }
 
     render() {
       return (
         <div className="App">
-          <Mycars title={this.state.titre}> </Mycars>          
+          <Mycars 
+              title={this.state.titre} 
+              color={this.state.color}
+              /> 
         </div>
       );
     }
-
-
 
 }
 

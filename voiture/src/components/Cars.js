@@ -1,12 +1,10 @@
 import React from "react";
 
-const Car = ({children, color}) => {
-
-    // console.log(props);
+const Car = ({color, car}) => {
 
         return(
             <div style={ {backgroundColor: 'pink', width: "400px", padding: "10px", margin: "5px auto"} }>
-                <p>Marque : {children} </p>
+                <p>Marque : {car} </p>
                 <p>Couleur : {color ? color :"Néant" } </p>
             </div>
         )
