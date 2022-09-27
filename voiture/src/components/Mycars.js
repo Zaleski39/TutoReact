@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import {Car} from "./Cars";
+import {Wrapper} from "./Wrapper";
+import {MyHeader} from "./MyHeader";
 
 export class Mycars extends Component {
 
@@ -12,7 +14,10 @@ export class Mycars extends Component {
 
         return (
             <div>
-                <h1 style={ { color:this.props.color } }> {this.props.title} </h1>  
+                <Wrapper>  
+                    <MyHeader title={this.props.titre} color={this.props.color} >                           
+                    </MyHeader>
+                </Wrapper>
                 <Car car={this.state.cars[0]} color="Rouge"> </Car>  
                 <Car car={this.state.cars[1]}>    </Car>  
                 <Car car={this.state.cars[2]} color="Grise">      </Car>  
@@ -20,3 +25,4 @@ export class Mycars extends Component {
         ) 
     }
 }
+

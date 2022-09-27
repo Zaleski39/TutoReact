@@ -1,0 +1,1 @@
+export const MyHeader = ({title, color}) => <h1 style={ { color:color } }> {title} </h1>
