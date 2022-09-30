@@ -6,13 +6,16 @@ export class App extends Component {
 
     // Props & State
     state = {
-      titre: 'Mon catalogue Voitures'      
+      titre: 'Mon catalogue Voitures',
+      color: 'green'   
     }
 
     render() {
       return (
         <div className="App">
-          <Mycars color='green' titre='Mon catalogue Voitures' /> 
+          <Mycars 
+            color = {this.state.color} 
+            titre= {this.state.titre} /> 
         </div>
       );
     }

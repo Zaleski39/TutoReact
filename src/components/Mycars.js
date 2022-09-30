@@ -15,7 +15,10 @@ export class Mycars extends Component {
         return (
             <div>
                 <Wrapper>  
-                    <MyHeader title={this.props.titre} color={this.props.color} >                           
+                    <MyHeader 
+                        title={this.props.titre} 
+                        color={this.props.color} > 
+                        {this.props.title}                          
                     </MyHeader>
                 </Wrapper>
                 <Car car={this.state.cars[0]} color="Rouge"> </Car>  
