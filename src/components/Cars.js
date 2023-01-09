@@ -1,13 +1,20 @@
 import React from "react";
-import {Wrapper} from "./Wrapper";
 
-export const Car = ({color, car}) => {
+export const Car = ({color, nom, year}) => {
 
-        return(
-            <Wrapper>
-                <p>Marque : {car} </p>
-                <p>Couleur : {color ? color :"Néant" } </p>
-            </Wrapper>           
+    const colorInfo = color ? <p>Couleur : {color}</p> : <p>Couleur: "Néant"</p>;
+
+    if (nom) {
+        return (
+            <div style={ {backgroundColor: 'pink', width: '400px', padding: '10px', margin: '5px auto'} }>
+                <p>Marque : { nom }</p>
+                <p>Age : { year }</p>
+                {colorInfo}
+            </div>
         )
+    } else{
+        return null // ce return est Facultatif
+    }
+
 }
 
